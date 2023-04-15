@@ -7,6 +7,10 @@ tags:
   - selenium
 ---
 
+# Run project
+- Build docker image: `docker build -t fastapi-selenium .`
+- Run docker image: `docker run -dp 8000:8000 fastapi-selenium`
+
 # FastAPI Example
 
 This example starts up a [FastAPI](https://fastapi.tiangolo.com/) server with selenium already configured.

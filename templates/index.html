@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urls submission</title>
+</head>
+<body>
+<h3>Enter urls to verify separated by linebreak</h3>
+<textarea name="urls" form="urlform" rows="15" cols="100">
+    {{urls}}
+</textarea>
+<form method="POST" id="urlform">
+    <input type="submit" value="Submit">
+</form>
+
+<h3>Result</h3><br>
+<p>
+    {% for res in results %}
+    <div>{{res}} </div> <br><br>
+    {% endfor %}
+</p>
+
+</body>
+</html>
